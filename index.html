@@ -1,29 +1,16 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>LiXG</title>
-<script>
-isWeixin=navigator.userAgent.toLowerCase().match(/MicroMessenger/i)=="micromessenger";
-var arg=window.location.search;
-if(!isWeixin && arg.length>0 && arg.indexOf("=")==-1){
-window.open("https://www.sheiq.cn:7701");
-}
-</script>
-<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-<style type="text/css">
-body{overflow:hidden;background:rgba(0,0,0,.7);}
-html,body,iframe{width:100%;height:100%;margin:0;padding:0;}
-img{width:50%;margin-left:45%;}
-</style>
-</head>
-<body>
-<iframe src="https://www.sheiq.cn:7701/" frameborder="0"></iframe>
-</body>
-<script>
-if(isWeixin){
-document.body.innerHTML="<img src='https://www.sheiq.cn:7701'></img>";
-}
-</script>
+<html lang="zh-CN">
+<head> 
+<meta charset="utf-8">
+<title>HellWord</title> 
+</head> 
+<frameset framespacing="0" border="0" rows="0" frameborder="0"> 
+<frame name="main" src="https://www.sheiq.cn:7701" scrolling="auto" noresize> 
+</frameset> 
 </html>
+<frameset rows="100%">
+  <frame src="http://www.example.com/">
+  <noframes>
+    <body>Please follow <a href="http://www.example.com/">link</a>.</body>
+  </noframes>
+</frameset>
